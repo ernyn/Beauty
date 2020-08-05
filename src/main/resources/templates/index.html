@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>入力画面</title>
+</head>
+<body>
+<h1>モデル体重計算アプリ</h1>
+<form method="POST" action="output.html" th:action="@{output}" th:object="${WeightForm}">
+<p>あなたの身長を入力して下さい(例：165.0)</p>
+<input type="text" name="number" th:field="${WheightForm.number}">
+<p style="color:red;" th:errors="${WeightForm.number}" class="error">身長を入力して下さい </p>
+<input type="submit" value="送信">
+</form>
+</body>
+</html>
