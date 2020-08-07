@@ -5,16 +5,16 @@ import javax.validation.constraints.Pattern;
 
 public class WeightForm {
 
-@NotEmpty(message = "身長を入力して下さい")
-@Pattern(regexp = "\\d{3}",message = "半角数字、3ケタでお願いいたします")
-private String number;
+	@NotEmpty(message = " 身長を入力して下さい")
+	@Pattern(regexp = "\\d{3}", message = "半角数字、3ケタでお願いいたします")
+	private int number;
 
-public String getNumber() {
-return number;
-}
+	public int getNumber() {
+		return number;
+	}
 
-public void setNumber(String number) {
-this.number = number;
-}
+	public void setNumber(int number) {
+		this.number = number;
+	}
 
 }
