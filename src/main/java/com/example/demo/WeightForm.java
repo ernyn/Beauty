@@ -7,13 +7,13 @@ public class WeightForm {
 
 	@NotEmpty(message = " 身長を入力して下さい")
 	@Pattern(regexp = "\\d{3}", message = "半角数字、3ケタでお願いいたします")
-	private int number;
+	private double number;
 
-	public int getNumber() {
+	public double getNumber() {
 		return number;
 	}
 
-	public void setNumber(int number) {
+	public void setNumber(double number) {
 		this.number = number;
 	}
 

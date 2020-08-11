@@ -26,12 +26,11 @@ if (bindingResult.hasErrors()) {
 return "index.html";
 }
 
-int number = weightForm.getNumber();
-//String name = "コントローラー太郎";
+double number = weightForm.getNumber();
 
 //サービス層から身長を検索
 WeightService weightService = new WeightServiceImpl();
-int name = weightService.findByNo(number);
+double name = weightService.findByNo(number);
 
 model.addAttribute("number", number);
 model.addAttribute("name", name);
