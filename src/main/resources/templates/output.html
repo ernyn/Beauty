@@ -5,9 +5,10 @@
 <title>結果画面</title>
 </head>
 <body>
-<h1>あなたの身長のモデル体重は・・・</h1>
-<p><span th:text="${number}">㎏です</span></p>
-<p>モデル体重：<span th:text="${name}">㎏です</span></p>
+<p>あなたの身長のモデル体重は・・・</p>
+<h1><span th:text="${name}"></span>㎏です</h1>
+<p>この体重を意識して体づくりをしよう！</p>
+
 <a href="index.html" th:href="@{input}">入力画面へ</a>
 </body>
 </html>
