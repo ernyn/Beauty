@@ -2,13 +2,25 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+<link rel="stylesheet" href="css/out.css">
 <title>結果画面</title>
 </head>
+<header>
+<img src="img/logo.png" width="200" height="50"/>
+<hr>
+</header>
 <body>
 <p>あなたの身長のモデル体重は・・・</p>
 <h1><span th:text="${name}"></span>㎏です</h1>
+<img src="img/weight.jpg" width="300" height="200"/>
 <p>この体重を意識して体づくりをしよう！</p>
+<script src="js/beauty.js"></script>
 
-<a href="index.html" th:href="@{input}">入力画面へ</a>
+<a href="beauty.html">改善フォームはこちら</a>
+<a href="beauty.html" th:href="@{next}">改善フォームはこちら</a>
 </body>
+<footer>
+    <p>(c) yano.erina.com</p>
+</footer>
 </html>

@@ -1,10 +1,17 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>入力画面</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+<title>モデル体重計算</title>
+<link rel="stylesheet" href="css/top.css">
 </head>
+<header>
+<img src="img/logo.png" width="200" height="50"/>
+<hr>
+</header>
 <body>
 <h1>モデル体重計算アプリ</h1>
+<img src="img/tr.jpg" width="300" height="200"/>
 <form method="POST" action="output.html" th:action="@{output}" th:object="${weightForm}">
 <p>あなたの身長を入力して下さい(例：1.60)</p>
 <input type="text" name="number" th:field="${weightForm.number}">
@@ -12,4 +19,7 @@
 <input type="submit" value="送信">
 </form>
 </body>
+<footer>
+    <p>(c) yano.erina.com</p>
+</footer>
 </html>

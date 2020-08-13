@@ -26,6 +26,8 @@ if (bindingResult.hasErrors()) {
 return "index.html";
 }
 
+
+
 double number = weightForm.getNumber();
 
 //サービス層から身長を検索
