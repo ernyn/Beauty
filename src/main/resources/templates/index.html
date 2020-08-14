@@ -2,7 +2,7 @@
 <head>
 <meta charset="UTF-8">
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
-<title>モデル体重計算</title>
+<title>シンデレラ体重計算</title>
 <link rel="stylesheet" href="css/top.css">
 </head>
 <header>
@@ -10,13 +10,18 @@
 <hr>
 </header>
 <body>
-<h1>モデル体重計算アプリ</h1>
+<h1>シンデレラ体重計算アプリ</h1>
 <img src="img/tr.jpg" width="300" height="200"/>
 <form method="POST" action="output.html" th:action="@{output}" th:object="${weightForm}">
 <p>あなたの身長を入力して下さい(例：1.60)</p>
 <input type="text" name="number" th:field="${weightForm.number}">
 <p style="color:red;" th:errors="${weightForm.number}" class="error">身長を入力して下さい </p>
 <input type="submit" value="送信">
+
+<p>シンデレラ体重は細いけれどガリガリ過ぎない、
+<br>身体が1番美しく見える体重の事を表します。
+<br>あなたをより輝かせる体重を知りませんか？
+</p>
 </form>
 </body>
 <footer>

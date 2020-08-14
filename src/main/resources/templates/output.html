@@ -11,14 +11,36 @@
 <hr>
 </header>
 <body>
-<p>あなたの身長のモデル体重は・・・</p>
+<p>あなたの身長のシンデレラ体重は・・・</p>
 <h1><span th:text="${name}"></span>㎏です</h1>
-<img src="img/weight.jpg" width="300" height="200"/>
-<p>この体重を意識して体づくりをしよう！</p>
-<script src="js/beauty.js"></script>
-
-<a href="beauty.html">改善フォームはこちら</a>
-<a href="beauty.html" th:href="@{next}">改善フォームはこちら</a>
+<img src="img/weight2.jpg" width="300" height="200"/>
+<br><a href="#" onclick="location.hash='';location.hash='beautymenu';return false;">食事改善メニュー</a>
+<p>この体重を意識して身体づくりを始めましょう！
+<br>女性が1番美しく見える体重目指し
+<br>美しい身体づくりをしませんか？
+<br>美しく健康に体重を減らす方法として
+<br>食事改善メニューがおすすめです！
+</p>
+<a name="beautymenu">----------------------食事改善メニュー----------------------</a>
+<br>
+<p>
+<h3>ボロンで女性らしく引き締める</h3>
+<img src="img/bolon.png" width="300" height="142"/><br>
+ キャベツ:ボロンは熱に弱いので生で食べましょう。<br>
+ 煮干し:小腹が空いた時。おやつに。<br>
+ とろろ昆布:お味噌汁やご飯に乗せて。<br>
+ りんご:デザートや、100%ジュースでも可。<br><br>
+<h3>タンパク質で健康と美の基本を整える</h3>
+<img src="img/protain2.png" width="300" height="142"/><br>
+ 納豆:ご飯やうどんに乗せて。<br>
+ プロテイン:運動の後や寝る前に。<br>
+ 卵:毎日１つ。調理方法は無限大<br>
+ 鶏肉:お勧めは胸肉。毎日鶏肉を食べましょう。<br>
+ -------------------------------------------------------------------
+</p>
+<script type="text/javascript">
+        document.write("あなたも<strong>シンデレラ体重</strong>で美しくなりませんか？");
+</script>
 </body>
 <footer>
     <p>(c) yano.erina.com</p>
