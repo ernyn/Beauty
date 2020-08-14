@@ -1,0 +1,27 @@
+html{ 
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+body {
+  font-family: 'Lato', 'Noto Sans JP', 'ƒqƒ‰ƒMƒmŠpƒS ProN', 'Hiragino Kaku Gothic ProN', 'ƒƒCƒŠƒI', Meiryo, '‚l‚r ‚oƒSƒVƒbƒN', 'MS PGothic', sans-serif;
+  border: 50px;
+}
+
+footer {
+  text-align: center;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 0em;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
